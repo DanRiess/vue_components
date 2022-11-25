@@ -2,6 +2,7 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HamburgerMenu from './components/buttons/HamburgerMenu.vue'
+import ColorSchemeToggle from './components/buttons/ColorSchemeToggle.vue'
 </script>
 
 <template>
@@ -9,7 +10,8 @@ import HamburgerMenu from './components/buttons/HamburgerMenu.vue'
 		<h1>Vue Components</h1>
 		<h2>Buttons</h2>
 		<div class="square-buttons">
-			<HamburgerMenu v-bind="{ width: 30 }" />
+			<HamburgerMenu v-bind="{ width: 50 }" />
+			<ColorSchemeToggle v-bind="{ width: 50 }" />
 		</div>
 	</article>
 </template>

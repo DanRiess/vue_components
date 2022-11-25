@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, CSSProperties, onMounted, ref, StyleValue } from 'vue'
+import { computed, CSSProperties } from 'vue'
 
 // create an interface for the props
 export interface Props {
@@ -54,7 +54,7 @@ const toggleNavigation = (e: MouseEvent) => {
 		aria-expanded="false"
 		:style="cssProps"
 		@click="toggleNavigation">
-		<svg class="hamburger" stroke="var(--button-color)" fill="none" viewBox="0 0 100 100">
+		<svg class="hamburger" fill="none" viewBox="0 0 100 100">
 			<path
 				class="path"
 				stroke-width="10"
